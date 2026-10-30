@@ -1,0 +1,937 @@
+{
+  "generatedAt": "2026-10-30T16:42:35Z",
+  "totalSeries": 12,
+  "totalChapters": 36,
+  "totalPages": 216,
+  "series": [
+    {
+      "id": "one-piece",
+      "rank": 1,
+      "title": "One Piece",
+      "japaneseTitle": "ONE PIECE ワンピース",
+      "author": "Eiichiro Oda",
+      "mangadexId": null,
+      "malId": 13,
+      "cover": "assets/covers/one-piece.jpg",
+      "badge": "HOT",
+      "updateDay": "SUN",
+      "views": "2.8M",
+      "viewsNum": 2840000,
+      "rating": "9.9",
+      "status": "Ongoing • Weekly Shonen Jump",
+      "accentColor": "#dc2626",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Shonen"
+      ],
+      "latestChapterNum": 1128,
+      "synopsis": "As a child, Monkey D. Luffy was inspired to become a pirate by listening to the tales of the buccaneer 'Red-Haired' Shanks. Now across the perilous seas of the New World and Egghead Island, Luffy and the Straw Hat Pirates close in on the ultimate treasure: the One Piece.",
+      "chapters": [
+        {
+          "id": "one-piece-ch-1",
+          "number": 1,
+          "title": "Romance Dawn",
+          "subtitle": "The Boy in the Straw Hat",
+          "date": "Oct 2026",
+          "views": "901K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/one-piece/ch1/page_01.jpg",
+            "assets/chapters/one-piece/ch1/page_02.jpg",
+            "assets/chapters/one-piece/ch1/page_03.jpg",
+            "assets/chapters/one-piece/ch1/page_04.jpg",
+            "assets/chapters/one-piece/ch1/page_05.jpg",
+            "assets/chapters/one-piece/ch1/page_06.jpg"
+          ]
+        },
+        {
+          "id": "one-piece-ch-1127",
+          "number": 1127,
+          "title": "Adventure in the Land of Mystery",
+          "subtitle": "The Giant Kingdom of Elbaph",
+          "date": "Oct 2026",
+          "views": "856K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/one-piece/ch2/page_01.jpg",
+            "assets/chapters/one-piece/ch2/page_02.jpg",
+            "assets/chapters/one-piece/ch2/page_03.jpg",
+            "assets/chapters/one-piece/ch2/page_04.jpg",
+            "assets/chapters/one-piece/ch2/page_05.jpg",
+            "assets/chapters/one-piece/ch2/page_06.jpg"
+          ]
+        },
+        {
+          "id": "one-piece-ch-1128",
+          "number": 1128,
+          "title": "The Sun God's Drums",
+          "subtitle": "Warriors of Elbaph Awaken",
+          "date": "Oct 2026",
+          "views": "811K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/one-piece/ch3/page_01.jpg",
+            "assets/chapters/one-piece/ch3/page_02.jpg",
+            "assets/chapters/one-piece/ch3/page_03.jpg",
+            "assets/chapters/one-piece/ch3/page_04.jpg",
+            "assets/chapters/one-piece/ch3/page_05.jpg",
+            "assets/chapters/one-piece/ch3/page_06.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jujutsu-kaisen",
+      "rank": 2,
+      "title": "Jujutsu Kaisen",
+      "japaneseTitle": "呪術廻戦",
+      "author": "Gege Akutami",
+      "mangadexId": null,
+      "malId": 113138,
+      "cover": "assets/covers/jujutsu-kaisen.jpg",
+      "badge": "HOT",
+      "updateDay": "SUN",
+      "views": "2.4M",
+      "viewsNum": 2410000,
+      "rating": "9.8",
+      "status": "Completed • Shonen Jump Masterpiece",
+      "accentColor": "#7c3aed",
+      "genres": [
+        "Action",
+        "Dark Fantasy",
+        "Supernatural",
+        "Shonen"
+      ],
+      "latestChapterNum": 271,
+      "synopsis": "High schooler Yuji Itadori swallows a rotting cursed talisman—the finger of Ryomen Sukuna, the undisputed King of Curses—and becomes host to the most lethal sorcerer in history. Enrolling in Tokyo Jujutsu High under Satoru Gojo, Yuji steps into a ruthless war of curses.",
+      "chapters": [
+        {
+          "id": "jujutsu-kaisen-ch-1",
+          "number": 1,
+          "title": "Ryomen Sukuna",
+          "subtitle": "The Cursed Talisman Awakens",
+          "date": "Oct 2026",
+          "views": "758K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/jujutsu-kaisen/ch1/page_01.jpg",
+            "assets/chapters/jujutsu-kaisen/ch1/page_02.jpg",
+            "assets/chapters/jujutsu-kaisen/ch1/page_03.jpg",
+            "assets/chapters/jujutsu-kaisen/ch1/page_04.jpg",
+            "assets/chapters/jujutsu-kaisen/ch1/page_05.jpg",
+            "assets/chapters/jujutsu-kaisen/ch1/page_06.jpg"
+          ]
+        },
+        {
+          "id": "jujutsu-kaisen-ch-270",
+          "number": 270,
+          "title": "The End of a Dream",
+          "subtitle": "Aftermath of the Shinjuku Showdown",
+          "date": "Oct 2026",
+          "views": "713K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/jujutsu-kaisen/ch2/page_01.jpg",
+            "assets/chapters/jujutsu-kaisen/ch2/page_02.jpg",
+            "assets/chapters/jujutsu-kaisen/ch2/page_03.jpg",
+            "assets/chapters/jujutsu-kaisen/ch2/page_04.jpg",
+            "assets/chapters/jujutsu-kaisen/ch2/page_05.jpg",
+            "assets/chapters/jujutsu-kaisen/ch2/page_06.jpg"
+          ]
+        },
+        {
+          "id": "jujutsu-kaisen-ch-271",
+          "number": 271,
+          "title": "From Now On",
+          "subtitle": "Grand Finale Chapter",
+          "date": "Oct 2026",
+          "views": "668K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/jujutsu-kaisen/ch3/page_01.jpg",
+            "assets/chapters/jujutsu-kaisen/ch3/page_02.jpg",
+            "assets/chapters/jujutsu-kaisen/ch3/page_03.jpg",
+            "assets/chapters/jujutsu-kaisen/ch3/page_04.jpg",
+            "assets/chapters/jujutsu-kaisen/ch3/page_05.jpg",
+            "assets/chapters/jujutsu-kaisen/ch3/page_06.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chainsaw-man",
+      "rank": 3,
+      "title": "Chainsaw Man",
+      "japaneseTitle": "チェンソーマン",
+      "author": "Tatsuki Fujimoto",
+      "mangadexId": null,
+      "malId": 116778,
+      "cover": "assets/covers/chainsaw-man.jpg",
+      "badge": "UP",
+      "updateDay": "WED",
+      "views": "1.9M",
+      "viewsNum": 1950000,
+      "rating": "9.7",
+      "status": "Ongoing • Shonen Jump+",
+      "accentColor": "#f97316",
+      "genres": [
+        "Action",
+        "Dark Fantasy",
+        "Supernatural"
+      ],
+      "latestChapterNum": 182,
+      "synopsis": "Denji was a small-time devil hunter just trying to survive in a harsh world. After being betrayed and killed, he fuses with his chainsaw devil pet Pochita and revives as the unstoppable, blood-soaked Chainsaw Man.",
+      "chapters": [
+        {
+          "id": "chainsaw-man-ch-1",
+          "number": 1,
+          "title": "Dog & Chainsaw",
+          "subtitle": "Show Me Your Dreams, Denji",
+          "date": "Oct 2026",
+          "views": "605K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/chainsaw-man/ch1/page_01.jpg",
+            "assets/chapters/chainsaw-man/ch1/page_02.jpg",
+            "assets/chapters/chainsaw-man/ch1/page_03.jpg",
+            "assets/chapters/chainsaw-man/ch1/page_04.jpg",
+            "assets/chapters/chainsaw-man/ch1/page_05.jpg",
+            "assets/chapters/chainsaw-man/ch1/page_06.jpg"
+          ]
+        },
+        {
+          "id": "chainsaw-man-ch-181",
+          "number": 181,
+          "title": "The Hero of Hell",
+          "subtitle": "Black Chainsaw Man vs. Primal Fear",
+          "date": "Oct 2026",
+          "views": "560K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/chainsaw-man/ch2/page_01.jpg",
+            "assets/chapters/chainsaw-man/ch2/page_02.jpg",
+            "assets/chapters/chainsaw-man/ch2/page_03.jpg",
+            "assets/chapters/chainsaw-man/ch2/page_04.jpg",
+            "assets/chapters/chainsaw-man/ch2/page_05.jpg",
+            "assets/chapters/chainsaw-man/ch2/page_06.jpg"
+          ]
+        },
+        {
+          "id": "chainsaw-man-ch-182",
+          "number": 182,
+          "title": "World Without Snow",
+          "subtitle": "Echoes Inside the Abyss",
+          "date": "Oct 2026",
+          "views": "515K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/chainsaw-man/ch3/page_01.jpg",
+            "assets/chapters/chainsaw-man/ch3/page_02.jpg",
+            "assets/chapters/chainsaw-man/ch3/page_03.jpg",
+            "assets/chapters/chainsaw-man/ch3/page_04.jpg",
+            "assets/chapters/chainsaw-man/ch3/page_05.jpg",
+            "assets/chapters/chainsaw-man/ch3/page_06.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "solo-leveling",
+      "rank": 4,
+      "title": "Solo Leveling",
+      "japaneseTitle": "俺だけレベルアップな件",
+      "author": "Chugong / DUBU (REDICE)",
+      "mangadexId": null,
+      "malId": 121496,
+      "cover": "assets/covers/solo-leveling.jpg",
+      "badge": "HOT",
+      "updateDay": "THU",
+      "views": "2.1M",
+      "viewsNum": 2120000,
+      "rating": "9.8",
+      "status": "Complete + Ragnarok Sidestories",
+      "accentColor": "#3b82f6",
+      "genres": [
+        "Action",
+        "Dark Fantasy",
+        "Adventure"
+      ],
+      "latestChapterNum": 200,
+      "synopsis": "Known as the 'World's Weakest Hunter,' E-Rank Sung Jinwoo barely survives a brutal Double Dungeon trial—only to awaken a mysterious Player System visible solely to him. Now he commands an immortal army of shadows as the Shadow Monarch.",
+      "chapters": [
+        {
+          "id": "solo-leveling-ch-1",
+          "number": 1,
+          "title": "The Double Dungeon",
+          "subtitle": "E-Rank Hunter Sung Jinwoo",
+          "date": "Oct 2026",
+          "views": "661K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/solo-leveling/ch1/page_01.jpg",
+            "assets/chapters/solo-leveling/ch1/page_02.jpg",
+            "assets/chapters/solo-leveling/ch1/page_03.jpg",
+            "assets/chapters/solo-leveling/ch1/page_04.jpg",
+            "assets/chapters/solo-leveling/ch1/page_05.jpg",
+            "assets/chapters/solo-leveling/ch1/page_06.jpg"
+          ]
+        },
+        {
+          "id": "solo-leveling-ch-199",
+          "number": 199,
+          "title": "Shadow Monarch's Reign",
+          "subtitle": "Ten Million Shadows Kneel",
+          "date": "Oct 2026",
+          "views": "616K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/solo-leveling/ch2/page_01.jpg",
+            "assets/chapters/solo-leveling/ch2/page_02.jpg",
+            "assets/chapters/solo-leveling/ch2/page_03.jpg",
+            "assets/chapters/solo-leveling/ch2/page_04.jpg",
+            "assets/chapters/solo-leveling/ch2/page_05.jpg",
+            "assets/chapters/solo-leveling/ch2/page_06.jpg"
+          ]
+        },
+        {
+          "id": "solo-leveling-ch-200",
+          "number": 200,
+          "title": "Epilogue: The Next Generation",
+          "subtitle": "A Legacy Written in Shadows",
+          "date": "Oct 2026",
+          "views": "571K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/solo-leveling/ch3/page_01.jpg",
+            "assets/chapters/solo-leveling/ch3/page_02.jpg",
+            "assets/chapters/solo-leveling/ch3/page_03.jpg",
+            "assets/chapters/solo-leveling/ch3/page_04.jpg",
+            "assets/chapters/solo-leveling/ch3/page_05.jpg",
+            "assets/chapters/solo-leveling/ch3/page_06.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dandadan",
+      "rank": 5,
+      "title": "Dandadan",
+      "japaneseTitle": "ダンダダン",
+      "author": "Yukinobu Tatsu",
+      "mangadexId": null,
+      "malId": 135496,
+      "cover": "assets/covers/dandadan.jpg",
+      "badge": "UP",
+      "updateDay": "MON",
+      "views": "1.7M",
+      "viewsNum": 1740000,
+      "rating": "9.7",
+      "status": "Ongoing • Shonen Jump+",
+      "accentColor": "#ec4899",
+      "genres": [
+        "Action",
+        "Supernatural",
+        "Sci-Fi",
+        "Comedy"
+      ],
+      "latestChapterNum": 173,
+      "synopsis": "Momo Ayase believes in ghosts but not aliens. Her nerdy classmate Okarun believes in aliens but not ghosts. In a bet to prove each other wrong, both stumble into terrifyingly real paranormal and extraterrestrial chaos!",
+      "chapters": [
+        {
+          "id": "dandadan-ch-1",
+          "number": 1,
+          "title": "That's How Love Starts, Ya Know!",
+          "subtitle": "Ghosts vs. Aliens Bet",
+          "date": "Oct 2026",
+          "views": "535K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/dandadan/ch1/page_01.jpg",
+            "assets/chapters/dandadan/ch1/page_02.jpg",
+            "assets/chapters/dandadan/ch1/page_03.jpg",
+            "assets/chapters/dandadan/ch1/page_04.jpg",
+            "assets/chapters/dandadan/ch1/page_05.jpg",
+            "assets/chapters/dandadan/ch1/page_06.jpg"
+          ]
+        },
+        {
+          "id": "dandadan-ch-172",
+          "number": 172,
+          "title": "Paranormal Showdown",
+          "subtitle": "The Occult Club Assembles",
+          "date": "Oct 2026",
+          "views": "490K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/dandadan/ch2/page_01.jpg",
+            "assets/chapters/dandadan/ch2/page_02.jpg",
+            "assets/chapters/dandadan/ch2/page_03.jpg",
+            "assets/chapters/dandadan/ch2/page_04.jpg",
+            "assets/chapters/dandadan/ch2/page_05.jpg",
+            "assets/chapters/dandadan/ch2/page_06.jpg"
+          ]
+        },
+        {
+          "id": "dandadan-ch-173",
+          "number": 173,
+          "title": "After-School UFO Curry",
+          "subtitle": "Count Saint-Germain's Shadow",
+          "date": "Oct 2026",
+          "views": "445K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/dandadan/ch3/page_01.jpg",
+            "assets/chapters/dandadan/ch3/page_02.jpg",
+            "assets/chapters/dandadan/ch3/page_03.jpg",
+            "assets/chapters/dandadan/ch3/page_04.jpg",
+            "assets/chapters/dandadan/ch3/page_05.jpg",
+            "assets/chapters/dandadan/ch3/page_06.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kagurabachi",
+      "rank": 6,
+      "title": "Kagurabachi",
+      "japaneseTitle": "カグラバチ",
+      "author": "Takeru Hokazono",
+      "mangadexId": null,
+      "malId": 162479,
+      "cover": "assets/covers/kagurabachi.jpg",
+      "badge": "HOT",
+      "updateDay": "SUN",
+      "views": "1.6M",
+      "viewsNum": 1630000,
+      "rating": "9.8",
+      "status": "Ongoing • Weekly Shonen Jump",
+      "accentColor": "#ef4444",
+      "genres": [
+        "Action",
+        "Dark Fantasy",
+        "Shonen"
+      ],
+      "latestChapterNum": 55,
+      "synopsis": "Young Chihiro Rokuhira spends his days training under his famous swordsmith father Kunishige. When a ruthless cabal of sorcerers known as the Hishaku murders his father and steals six enchanted blades, Chihiro unsheathes the seventh blade, Enten, with fresh hatred.",
+      "chapters": [
+        {
+          "id": "kagurabachi-ch-1",
+          "number": 1,
+          "title": "Mission",
+          "subtitle": "Fresh Hatred Every Morning",
+          "date": "Oct 2026",
+          "views": "498K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/kagurabachi/ch1/page_01.jpg",
+            "assets/chapters/kagurabachi/ch1/page_02.jpg",
+            "assets/chapters/kagurabachi/ch1/page_03.jpg",
+            "assets/chapters/kagurabachi/ch1/page_04.jpg",
+            "assets/chapters/kagurabachi/ch1/page_05.jpg",
+            "assets/chapters/kagurabachi/ch1/page_06.jpg"
+          ]
+        },
+        {
+          "id": "kagurabachi-ch-54",
+          "number": 54,
+          "title": "The Enchanted Blade Bearers",
+          "subtitle": "Blood and Ink at the Temple",
+          "date": "Oct 2026",
+          "views": "453K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/kagurabachi/ch2/page_01.jpg",
+            "assets/chapters/kagurabachi/ch2/page_02.jpg",
+            "assets/chapters/kagurabachi/ch2/page_03.jpg",
+            "assets/chapters/kagurabachi/ch2/page_04.jpg",
+            "assets/chapters/kagurabachi/ch2/page_05.jpg",
+            "assets/chapters/kagurabachi/ch2/page_06.jpg"
+          ]
+        },
+        {
+          "id": "kagurabachi-ch-55",
+          "number": 55,
+          "title": "Daybreak of the Sword",
+          "subtitle": "Vengeance Forged in Steel",
+          "date": "Oct 2026",
+          "views": "408K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/kagurabachi/ch3/page_01.jpg",
+            "assets/chapters/kagurabachi/ch3/page_02.jpg",
+            "assets/chapters/kagurabachi/ch3/page_03.jpg",
+            "assets/chapters/kagurabachi/ch3/page_04.jpg",
+            "assets/chapters/kagurabachi/ch3/page_05.jpg",
+            "assets/chapters/kagurabachi/ch3/page_06.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sakamoto-days",
+      "rank": 7,
+      "title": "Sakamoto Days",
+      "japaneseTitle": "SAKAMOTO DAYS",
+      "author": "Yuto Suzuki",
+      "mangadexId": null,
+      "malId": 133165,
+      "cover": "assets/covers/sakamoto-days.jpg",
+      "badge": "UP",
+      "updateDay": "SUN",
+      "views": "1.3M",
+      "viewsNum": 1310000,
+      "rating": "9.6",
+      "status": "Ongoing • Weekly Shonen Jump",
+      "accentColor": "#eab308",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Shonen"
+      ],
+      "latestChapterNum": 188,
+      "synopsis": "Taro Sakamoto was once the undisputed greatest hitman in the underworld—feared by villains and worshipped by assassins. Then he fell in love, retired, got married, had a daughter, and gained weight running a neighborhood convenience store. Rule #1 of the Sakamoto family: No killing!",
+      "chapters": [
+        {
+          "id": "sakamoto-days-ch-1",
+          "number": 1,
+          "title": "The Legendary Hitman",
+          "subtitle": "Welcome to Sakamoto's Store",
+          "date": "Oct 2026",
+          "views": "391K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/sakamoto-days/ch1/page_01.jpg",
+            "assets/chapters/sakamoto-days/ch1/page_02.jpg",
+            "assets/chapters/sakamoto-days/ch1/page_03.jpg",
+            "assets/chapters/sakamoto-days/ch1/page_04.jpg",
+            "assets/chapters/sakamoto-days/ch1/page_05.jpg",
+            "assets/chapters/sakamoto-days/ch1/page_06.jpg"
+          ]
+        },
+        {
+          "id": "sakamoto-days-ch-187",
+          "number": 187,
+          "title": "The Order vs. Slur",
+          "subtitle": "Zero-Second Reflexes",
+          "date": "Oct 2026",
+          "views": "346K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/sakamoto-days/ch2/page_01.jpg",
+            "assets/chapters/sakamoto-days/ch2/page_02.jpg",
+            "assets/chapters/sakamoto-days/ch2/page_03.jpg",
+            "assets/chapters/sakamoto-days/ch2/page_04.jpg",
+            "assets/chapters/sakamoto-days/ch2/page_05.jpg",
+            "assets/chapters/sakamoto-days/ch2/page_06.jpg"
+          ]
+        },
+        {
+          "id": "sakamoto-days-ch-188",
+          "number": 188,
+          "title": "National Convenience Store Chain",
+          "subtitle": "Protecting Our Peace",
+          "date": "Oct 2026",
+          "views": "301K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/sakamoto-days/ch3/page_01.jpg",
+            "assets/chapters/sakamoto-days/ch3/page_02.jpg",
+            "assets/chapters/sakamoto-days/ch3/page_03.jpg",
+            "assets/chapters/sakamoto-days/ch3/page_04.jpg",
+            "assets/chapters/sakamoto-days/ch3/page_05.jpg",
+            "assets/chapters/sakamoto-days/ch3/page_06.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kaiju-no-8",
+      "rank": 8,
+      "title": "Kaiju No. 8",
+      "japaneseTitle": "怪獣8号",
+      "author": "Naoya Matsumoto",
+      "mangadexId": null,
+      "malId": 127907,
+      "cover": "assets/covers/kaiju-no-8.jpg",
+      "badge": "NEW",
+      "updateDay": "FRI",
+      "views": "1.4M",
+      "viewsNum": 1420000,
+      "rating": "9.5",
+      "status": "Ongoing • Shonen Jump+",
+      "accentColor": "#06b6d4",
+      "genres": [
+        "Action",
+        "Sci-Fi",
+        "Shonen"
+      ],
+      "latestChapterNum": 117,
+      "synopsis": "In a Japan plagued by giant monsters called Kaiju, 32-year-old Kafka Hibino works cleanup crew disposing of monster corpses while his childhood friend Mina Ashiro leads the Defense Force. When a parasitic creature flies into his mouth, Kafka transforms into the humanoid titan: Kaiju No. 8!",
+      "chapters": [
+        {
+          "id": "kaiju-no-8-ch-1",
+          "number": 1,
+          "title": "The Man Who Became a Kaiju",
+          "subtitle": "Fortitude 9.8 Detected",
+          "date": "Oct 2026",
+          "views": "428K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/kaiju-no-8/ch1/page_01.jpg",
+            "assets/chapters/kaiju-no-8/ch1/page_02.jpg",
+            "assets/chapters/kaiju-no-8/ch1/page_03.jpg",
+            "assets/chapters/kaiju-no-8/ch1/page_04.jpg",
+            "assets/chapters/kaiju-no-8/ch1/page_05.jpg",
+            "assets/chapters/kaiju-no-8/ch1/page_06.jpg"
+          ]
+        },
+        {
+          "id": "kaiju-no-8-ch-116",
+          "number": 116,
+          "title": "Side by Side at Last",
+          "subtitle": "Kafka Hibino & Mina Ashiro",
+          "date": "Oct 2026",
+          "views": "383K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/kaiju-no-8/ch2/page_01.jpg",
+            "assets/chapters/kaiju-no-8/ch2/page_02.jpg",
+            "assets/chapters/kaiju-no-8/ch2/page_03.jpg",
+            "assets/chapters/kaiju-no-8/ch2/page_04.jpg",
+            "assets/chapters/kaiju-no-8/ch2/page_05.jpg",
+            "assets/chapters/kaiju-no-8/ch2/page_06.jpg"
+          ]
+        },
+        {
+          "id": "kaiju-no-8-ch-117",
+          "number": 117,
+          "title": "Roar of Humanity",
+          "subtitle": "Third Division Counterattack",
+          "date": "Oct 2026",
+          "views": "338K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/kaiju-no-8/ch3/page_01.jpg",
+            "assets/chapters/kaiju-no-8/ch3/page_02.jpg",
+            "assets/chapters/kaiju-no-8/ch3/page_03.jpg",
+            "assets/chapters/kaiju-no-8/ch3/page_04.jpg",
+            "assets/chapters/kaiju-no-8/ch3/page_05.jpg",
+            "assets/chapters/kaiju-no-8/ch3/page_06.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demon-slayer",
+      "rank": 9,
+      "title": "Demon Slayer: Kimetsu no Yaiba",
+      "japaneseTitle": "鬼滅の刃",
+      "author": "Koyoharu Gotouge",
+      "mangadexId": null,
+      "malId": 96792,
+      "cover": "assets/covers/demon-slayer.jpg",
+      "badge": "HOT",
+      "updateDay": "SAT",
+      "views": "2.2M",
+      "viewsNum": 2250000,
+      "rating": "9.8",
+      "status": "Completed • All-Time Legend",
+      "accentColor": "#10b981",
+      "genres": [
+        "Action",
+        "Dark Fantasy",
+        "Supernatural",
+        "Shonen"
+      ],
+      "latestChapterNum": 205,
+      "synopsis": "Kindhearted charcoal seller Tanjiro Kamado returns home to find his family slaughtered by a demon, and his younger sister Nezuko transformed into one. Determined to cure Nezuko and avenge his family, Tanjiro joins the Demon Slayer Corps.",
+      "chapters": [
+        {
+          "id": "demon-slayer-ch-1",
+          "number": 1,
+          "title": "Cruelty",
+          "subtitle": "Snow on the Mountain Path",
+          "date": "Oct 2026",
+          "views": "705K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/demon-slayer/ch1/page_01.jpg",
+            "assets/chapters/demon-slayer/ch1/page_02.jpg",
+            "assets/chapters/demon-slayer/ch1/page_03.jpg",
+            "assets/chapters/demon-slayer/ch1/page_04.jpg",
+            "assets/chapters/demon-slayer/ch1/page_05.jpg",
+            "assets/chapters/demon-slayer/ch1/page_06.jpg"
+          ]
+        },
+        {
+          "id": "demon-slayer-ch-204",
+          "number": 204,
+          "title": "A World Without Demons",
+          "subtitle": "Sunrise Over the Infinity Castle",
+          "date": "Oct 2026",
+          "views": "660K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/demon-slayer/ch2/page_01.jpg",
+            "assets/chapters/demon-slayer/ch2/page_02.jpg",
+            "assets/chapters/demon-slayer/ch2/page_03.jpg",
+            "assets/chapters/demon-slayer/ch2/page_04.jpg",
+            "assets/chapters/demon-slayer/ch2/page_05.jpg",
+            "assets/chapters/demon-slayer/ch2/page_06.jpg"
+          ]
+        },
+        {
+          "id": "demon-slayer-ch-205",
+          "number": 205,
+          "title": "Life Shining Across the Years",
+          "subtitle": "Series Grand Finale",
+          "date": "Oct 2026",
+          "views": "615K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/demon-slayer/ch3/page_01.jpg",
+            "assets/chapters/demon-slayer/ch3/page_02.jpg",
+            "assets/chapters/demon-slayer/ch3/page_03.jpg",
+            "assets/chapters/demon-slayer/ch3/page_04.jpg",
+            "assets/chapters/demon-slayer/ch3/page_05.jpg",
+            "assets/chapters/demon-slayer/ch3/page_06.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blue-lock",
+      "rank": 10,
+      "title": "Blue Lock",
+      "japaneseTitle": "ブルーロック",
+      "author": "Muneyuki Kaneshiro / Yusuke Nomura",
+      "mangadexId": null,
+      "malId": 114745,
+      "cover": "assets/covers/blue-lock.jpg",
+      "badge": "UP",
+      "updateDay": "TUE",
+      "views": "1.5M",
+      "viewsNum": 1540000,
+      "rating": "9.6",
+      "status": "Ongoing • Neo Egoist League",
+      "accentColor": "#2563eb",
+      "genres": [
+        "Sports",
+        "Action",
+        "Shonen"
+      ],
+      "latestChapterNum": 283,
+      "synopsis": "After Japan's disastrous elimination at the 2018 World Cup, eccentric mastermind Jinpachi Ego locks 300 high-school strikers inside 'Blue Lock'—a ruthless survival prison designed to forge the world's single greatest egoist striker.",
+      "chapters": [
+        {
+          "id": "blue-lock-ch-1",
+          "number": 1,
+          "title": "Dream",
+          "subtitle": "300 Strikers Enter Blue Lock",
+          "date": "Oct 2026",
+          "views": "468K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/blue-lock/ch1/page_01.jpg",
+            "assets/chapters/blue-lock/ch1/page_02.jpg",
+            "assets/chapters/blue-lock/ch1/page_03.jpg",
+            "assets/chapters/blue-lock/ch1/page_04.jpg",
+            "assets/chapters/blue-lock/ch1/page_05.jpg",
+            "assets/chapters/blue-lock/ch1/page_06.jpg"
+          ]
+        },
+        {
+          "id": "blue-lock-ch-282",
+          "number": 282,
+          "title": "Metavision X Predator Eye",
+          "subtitle": "Bastard München vs. Paris X Gen",
+          "date": "Oct 2026",
+          "views": "423K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/blue-lock/ch2/page_01.jpg",
+            "assets/chapters/blue-lock/ch2/page_02.jpg",
+            "assets/chapters/blue-lock/ch2/page_03.jpg",
+            "assets/chapters/blue-lock/ch2/page_04.jpg",
+            "assets/chapters/blue-lock/ch2/page_05.jpg",
+            "assets/chapters/blue-lock/ch2/page_06.jpg"
+          ]
+        },
+        {
+          "id": "blue-lock-ch-283",
+          "number": 283,
+          "title": "Two-Gun Volley",
+          "subtitle": "Birth of the Number One Striker",
+          "date": "Oct 2026",
+          "views": "378K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/blue-lock/ch3/page_01.jpg",
+            "assets/chapters/blue-lock/ch3/page_02.jpg",
+            "assets/chapters/blue-lock/ch3/page_03.jpg",
+            "assets/chapters/blue-lock/ch3/page_04.jpg",
+            "assets/chapters/blue-lock/ch3/page_05.jpg",
+            "assets/chapters/blue-lock/ch3/page_06.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bleach",
+      "rank": 11,
+      "title": "Bleach",
+      "japaneseTitle": "BLEACH ブリーチ",
+      "author": "Tite Kubo",
+      "mangadexId": null,
+      "malId": 12,
+      "cover": "assets/covers/bleach.jpg",
+      "badge": "HOT",
+      "updateDay": "SAT",
+      "views": "1.8M",
+      "viewsNum": 1820000,
+      "rating": "9.7",
+      "status": "Complete + Thousand-Year Blood War Arc",
+      "accentColor": "#f97316",
+      "genres": [
+        "Action",
+        "Supernatural",
+        "Adventure",
+        "Shonen"
+      ],
+      "latestChapterNum": 686,
+      "synopsis": "Fifteen-year-old Ichigo Kurosaki has been able to see ghosts for as long as he can remember. When Soul Reaper Rukia Kuchiki is critically injured defending his family from a Hollow, Ichigo inherits her powers and steps into the war between Soul Society, Hueco Mundo, and the Quincy Wandenreich.",
+      "chapters": [
+        {
+          "id": "bleach-ch-1",
+          "number": 1,
+          "title": "Death & Strawberry",
+          "subtitle": "The Substitute Soul Reaper",
+          "date": "Oct 2026",
+          "views": "561K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/bleach/ch1/page_01.jpg",
+            "assets/chapters/bleach/ch1/page_02.jpg",
+            "assets/chapters/bleach/ch1/page_03.jpg",
+            "assets/chapters/bleach/ch1/page_04.jpg",
+            "assets/chapters/bleach/ch1/page_05.jpg",
+            "assets/chapters/bleach/ch1/page_06.jpg"
+          ]
+        },
+        {
+          "id": "bleach-ch-685",
+          "number": 685,
+          "title": "The Blade Is Me",
+          "subtitle": "True Bankai: Tensa Zangetsu",
+          "date": "Oct 2026",
+          "views": "516K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/bleach/ch2/page_01.jpg",
+            "assets/chapters/bleach/ch2/page_02.jpg",
+            "assets/chapters/bleach/ch2/page_03.jpg",
+            "assets/chapters/bleach/ch2/page_04.jpg",
+            "assets/chapters/bleach/ch2/page_05.jpg",
+            "assets/chapters/bleach/ch2/page_06.jpg"
+          ]
+        },
+        {
+          "id": "bleach-ch-686",
+          "number": 686,
+          "title": "Death & Strawberry — Finale",
+          "subtitle": "Courage to Walk Forward",
+          "date": "Oct 2026",
+          "views": "471K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/bleach/ch3/page_01.jpg",
+            "assets/chapters/bleach/ch3/page_02.jpg",
+            "assets/chapters/bleach/ch3/page_03.jpg",
+            "assets/chapters/bleach/ch3/page_04.jpg",
+            "assets/chapters/bleach/ch3/page_05.jpg",
+            "assets/chapters/bleach/ch3/page_06.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "my-hero-academia",
+      "rank": 12,
+      "title": "My Hero Academia",
+      "japaneseTitle": "僕のヒーローアカデミア",
+      "author": "Kohei Horikoshi",
+      "mangadexId": "4f3bcae4-2d96-4c9d-932c-90181d9c873e",
+      "malId": 75989,
+      "cover": "assets/covers/my-hero-academia.jpg",
+      "badge": "HOT",
+      "updateDay": "MON",
+      "views": "1.9M",
+      "viewsNum": 1890000,
+      "rating": "9.7",
+      "status": "Completed • Plus Ultra Finale",
+      "accentColor": "#22c55e",
+      "genres": [
+        "Action",
+        "Sci-Fi",
+        "Shonen"
+      ],
+      "latestChapterNum": 430,
+      "synopsis": "In a world where 80% of humanity possesses superpowers called 'Quirks,' Quirkless boy Izuku Midoriya still dreams of becoming a hero like the legendary All Might. Moving the #1 Hero with his reckless courage, Deku inherits One For All.",
+      "chapters": [
+        {
+          "id": "my-hero-academia-ch-1",
+          "number": 1,
+          "title": "Izuku Midoriya: Origin",
+          "subtitle": "You Too Can Become a Hero",
+          "date": "Oct 2026",
+          "views": "585K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/my-hero-academia/ch1/page_01.jpg",
+            "assets/chapters/my-hero-academia/ch1/page_02.jpg",
+            "assets/chapters/my-hero-academia/ch1/page_03.jpg",
+            "assets/chapters/my-hero-academia/ch1/page_04.jpg",
+            "assets/chapters/my-hero-academia/ch1/page_05.jpg",
+            "assets/chapters/my-hero-academia/ch1/page_06.jpg"
+          ]
+        },
+        {
+          "id": "my-hero-academia-ch-429",
+          "number": 429,
+          "title": "A Girl's Ego & Reaching Hands",
+          "subtitle": "Embers of One For All",
+          "date": "Oct 2026",
+          "views": "540K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/my-hero-academia/ch2/page_01.jpg",
+            "assets/chapters/my-hero-academia/ch2/page_02.jpg",
+            "assets/chapters/my-hero-academia/ch2/page_03.jpg",
+            "assets/chapters/my-hero-academia/ch2/page_04.jpg",
+            "assets/chapters/my-hero-academia/ch2/page_05.jpg",
+            "assets/chapters/my-hero-academia/ch2/page_06.jpg"
+          ]
+        },
+        {
+          "id": "my-hero-academia-ch-430",
+          "number": 430,
+          "title": "My Hero Academia",
+          "subtitle": "Go Beyond — Plus Ultra!",
+          "date": "Oct 2026",
+          "views": "495K",
+          "isFree": true,
+          "pages": [
+            "assets/chapters/my-hero-academia/ch3/page_01.jpg",
+            "assets/chapters/my-hero-academia/ch3/page_02.jpg",
+            "assets/chapters/my-hero-academia/ch3/page_03.jpg",
+            "assets/chapters/my-hero-academia/ch3/page_04.jpg",
+            "assets/chapters/my-hero-academia/ch3/page_05.jpg",
+            "assets/chapters/my-hero-academia/ch3/page_06.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}

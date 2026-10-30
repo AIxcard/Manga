@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>MANGA PLUS by SHUEISHA — Official Global Manga Reader</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23dc2626'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='Arial,sans-serif' font-weight='900' font-size='32'%3EM+%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ====================================================================
+         TOP GLASSMORPHIC NAVIGATION HEADER (MANGA PLUS INSPIRED)
+    ===================================================================== -->
+    <header class="mp-header" id="mp-header">
+        <div class="mp-header-inner">
+            <!-- Brand Logo -->
+            <a href="#updates" class="mp-brand" id="brand-logo" aria-label="MANGA PLUS Home">
+                <div class="mp-logo-box">
+                    <span class="mp-logo-main">MANGA</span>
+                    <span class="mp-logo-plus">PLUS</span>
+                </div>
+                <div class="mp-logo-sub">
+                    <span>by SHUEISHA</span>
+                    <span class="mp-live-dot" title="Hybrid Local + Live MangaDex Engine Active"></span>
+                </div>
+            </a>
+
+            <!-- Primary Navigation Tabs -->
+            <nav class="mp-nav" aria-label="Main Navigation">
+                <button class="mp-nav-btn active" data-view="updates" id="nav-updates">
+                    <span class="nav-icon">⚡</span>
+                    <span>UPDATES</span>
+                </button>
+                <button class="mp-nav-btn" data-view="hottest" id="nav-hottest">
+                    <span class="nav-icon">🔥</span>
+                    <span>HOTTEST</span>
+                </button>
+                <button class="mp-nav-btn" data-view="mangalist" id="nav-mangalist">
+                    <span class="nav-icon">📚</span>
+                    <span>MANGA LIST</span>
+                </button>
+                <button class="mp-nav-btn" data-view="shelf" id="nav-shelf">
+                    <span class="nav-icon">🔖</span>
+                    <span>MY SHELF</span>
+                    <span class="mp-shelf-badge" id="shelf-count-badge">0</span>
+                </button>
+            </nav>
+
+            <!-- Search & Auto-Import Action Bar -->
+            <div class="mp-header-actions">
+                <div class="mp-search-wrap">
+                    <span class="mp-search-icon">🔍</span>
+                    <input
+                        type="search"
+                        id="global-search-input"
+                        class="mp-search-input"
+                        placeholder="Search series, author, or live MangaDex..."
+                        autocomplete="off"
+                    >
+                    <button class="mp-search-clear hidden" id="global-search-clear" title="Clear Search">✕</button>
+                </div>
+
+                <button class="mp-import-btn" id="open-import-modal-btn" title="Auto-Import Any Manga from MangaDex API">
+                    <span>＋</span>
+                    <span class="import-btn-label">Auto-Import</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ====================================================================
+         MAIN APPLICATION CONTAINER
+    ===================================================================== -->
+    <main class="mp-main" id="mp-main">
+
+        <!-- ================================================================
+             VIEW 1: UPDATES (HOME — HERO CAROUSEL, CONTINUE READING, DAILY SCHEDULE)
+        ================================================================= -->
+        <section class="mp-view active-view" id="view-updates">
+            <!-- Hero Spotlight Carousel -->
+            <div class="mp-hero-banner" id="hero-banner">
+                <div class="mp-hero-backdrop" id="hero-backdrop"></div>
+                <div class="mp-hero-gradient"></div>
+
+                <div class="mp-hero-content" id="hero-content">
+                    <!-- Populated dynamically by script.js -->
+                </div>
+
+                <!-- Hero Controls -->
+                <div class="mp-hero-controls">
+                    <button class="hero-arrow-btn" id="hero-prev-btn" aria-label="Previous Featured">‹</button>
+                    <div class="hero-dots" id="hero-dots"></div>
+                    <button class="hero-arrow-btn" id="hero-next-btn" aria-label="Next Featured">›</button>
+                </div>
+            </div>
+
+            <!-- Continue Reading Bar (Auto-shown when reading history exists) -->
+            <div class="mp-container">
+                <div class="mp-continue-bar hidden" id="continue-reading-bar">
+                    <!-- Populated dynamically from localStorage reading state -->
+                </div>
+            </div>
+
+            <!-- Daily Release Schedule Section -->
+            <div class="mp-container mp-section">
+                <div class="mp-section-header">
+                    <div>
+                        <span class="mp-eyebrow">SIMULRELEASE SCHEDULE</span>
+                        <h2 class="mp-section-title">DAILY UPDATES</h2>
+                    </div>
+                    <div class="mp-day-tabs" id="day-filter-tabs" role="tablist">
+                        <button class="mp-day-tab active" data-day="ALL">ALL</button>
+                        <button class="mp-day-tab" data-day="SUN">SUN</button>
+                        <button class="mp-day-tab" data-day="MON">MON</button>
+                        <button class="mp-day-tab" data-day="TUE">TUE</button>
+                        <button class="mp-day-tab" data-day="WED">WED</button>
+                        <button class="mp-day-tab" data-day="THU">THU</button>
+                        <button class="mp-day-tab" data-day="FRI">FRI</button>
+                        <button class="mp-day-tab" data-day="SAT">SAT</button>
+                    </div>
+                </div>
+
+                <!-- Updates Manga Card Grid -->
+                <div class="mp-manga-grid" id="updates-manga-grid">
+                    <!-- Populated dynamically -->
+                </div>
+            </div>
+
+            <!-- Quick Ranking Strip on Home -->
+            <div class="mp-container mp-section">
+                <div class="mp-section-header">
+                    <div>
+                        <span class="mp-eyebrow">SHUEISHA GLOBAL RANKING</span>
+                        <h2 class="mp-section-title">TRENDING NOW 🔥</h2>
+                    </div>
+                    <button class="mp-link-btn" id="home-view-all-rankings">View Full Leaderboard →</button>
+                </div>
+                <div class="mp-trending-strip" id="home-trending-strip">
+                    <!-- Populated dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             VIEW 2: HOTTEST (TOP RANKINGS LEADERBOARD)
+        ================================================================= -->
+        <section class="mp-view" id="view-hottest">
+            <div class="mp-container mp-section">
+                <div class="mp-page-banner hottest-banner">
+                    <div>
+                        <span class="mp-eyebrow">REAL-TIME GLOBAL VIEWS</span>
+                        <h1 class="mp-page-title">🔥 HOTTEST MANGA RANKINGS</h1>
+                        <p class="mp-page-desc">Ranked by total reader views across Weekly Shonen Jump &amp; Shonen Jump+ simulreleases.</p>
+                    </div>
+                </div>
+
+                <!-- Top 3 Podium Cards -->
+                <div class="mp-podium-grid" id="hottest-podium-grid">
+                    <!-- Top 3 populated dynamically -->
+                </div>
+
+                <!-- Full Leaderboard #4+ -->
+                <div class="mp-leaderboard-list" id="hottest-leaderboard-list">
+                    <!-- Ranked rows populated dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             VIEW 3: MANGA LIST (CATALOG BROWSE + LIVE MANGADEX SEARCH ENGINE)
+        ================================================================= -->
+        <section class="mp-view" id="view-mangalist">
+            <div class="mp-container mp-section">
+                <div class="mp-page-banner">
+                    <div class="mp-list-banner-row">
+                        <div>
+                            <span class="mp-eyebrow">HYBRID LOCAL + CLOUD MANGADEX DIRECTORY</span>
+                            <h1 class="mp-page-title">📚 ALL MANGA DIRECTORY</h1>
+                            <p class="mp-page-desc">Filter our featured Shonen lineup or search 10,000+ live titles directly from the MangaDex API.</p>
+                        </div>
+                        <div class="mp-sort-box">
+                            <label for="catalog-sort-select">Sort By:</label>
+                            <select id="catalog-sort-select" class="mp-select">
+                                <option value="popular">Most Popular</option>
+                                <option value="rating">Highest Rated</option>
+                                <option value="latest">Highest Chapter Count</option>
+                                <option value="az">Title (A – Z)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Genre Filter Pills -->
+                    <div class="mp-genre-pills" id="genre-filter-pills">
+                        <button class="mp-genre-pill active" data-genre="ALL">All Genres</button>
+                        <button class="mp-genre-pill" data-genre="Action">Action</button>
+                        <button class="mp-genre-pill" data-genre="Adventure">Adventure</button>
+                        <button class="mp-genre-pill" data-genre="Dark Fantasy">Dark Fantasy</button>
+                        <button class="mp-genre-pill" data-genre="Supernatural">Supernatural</button>
+                        <button class="mp-genre-pill" data-genre="Sci-Fi">Sci-Fi</button>
+                        <button class="mp-genre-pill" data-genre="Sports">Sports</button>
+                        <button class="mp-genre-pill" data-genre="Comedy">Comedy</button>
+                    </div>
+
+                    <!-- Live MangaDex Search Bar inside Manga List -->
+                    <div class="mp-live-search-bar">
+                        <input
+                            type="text"
+                            id="mangalist-live-input"
+                            class="mp-live-input"
+                            placeholder="Type any manga title (e.g. Berserk, Vagabond, Naruto, Frieren, One Punch Man)..."
+                        >
+                        <button class="mp-btn mp-btn-primary" id="mangalist-live-search-btn">
+                            🌐 Search Live MangaDex API
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Local Featured Catalog Grid -->
+                <div class="mp-manga-grid" id="catalog-manga-grid"></div>
+
+                <!-- Live MangaDex Cloud Search Results Section -->
+                <div class="mp-live-results-wrap hidden" id="live-mangadex-results-wrap">
+                    <div class="mp-section-header">
+                        <div>
+                            <span class="mp-eyebrow">LIVE API RESULTS FROM MANGADEX.ORG</span>
+                            <h2 class="mp-section-title" id="live-results-heading">CLOUD SEARCH RESULTS</h2>
+                        </div>
+                    </div>
+                    <div class="mp-manga-grid" id="live-mangadex-grid"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             VIEW 4: MY SHELF (FAVORITES, READING HISTORY & CATALOG EXPORT)
+        ================================================================= -->
+        <section class="mp-view" id="view-shelf">
+            <div class="mp-container mp-section">
+                <div class="mp-page-banner">
+                    <div class="mp-list-banner-row">
+                        <div>
+                            <span class="mp-eyebrow">PERSONAL LIBRARY &amp; SYNC</span>
+                            <h1 class="mp-page-title">🔖 MY MANGA SHELF</h1>
+                            <p class="mp-page-desc">Your bookmarked series, auto-imported titles, and automatic page-level reading history.</p>
+                        </div>
+                        <div class="mp-shelf-actions">
+                            <button class="mp-btn mp-btn-outline" id="export-catalog-btn">⬇ Export Catalog JSON</button>
+                            <button class="mp-btn mp-btn-outline" id="clear-history-btn">🗑 Clear Reading History</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Favorites Grid -->
+                <div class="mp-subsection">
+                    <h2 class="mp-section-title">♥ FAVORITE SERIES</h2>
+                    <div class="mp-manga-grid" id="shelf-favorites-grid"></div>
+                </div>
+
+                <!-- Reading History List -->
+                <div class="mp-subsection">
+                    <h2 class="mp-section-title">🕒 RECENT READING HISTORY</h2>
+                    <div class="mp-history-list" id="shelf-history-list"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ====================================================================
+         SERIES DETAIL & CHAPTER LIST MODAL
+    ===================================================================== -->
+    <div class="mp-modal-backdrop hidden" id="series-modal" role="dialog" aria-modal="true">
+        <div class="mp-series-modal-card">
+            <button class="mp-modal-close" id="close-series-modal" aria-label="Close Series Details">✕</button>
+            <div id="series-modal-content">
+                <!-- Populated dynamically when a series is clicked -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================================================
+         AUTO-IMPORT MANGA MODAL (1-CLICK LIVE MANGADEX IMPORTER)
+    ===================================================================== -->
+    <div class="mp-modal-backdrop hidden" id="import-modal" role="dialog" aria-modal="true">
+        <div class="mp-import-modal-card">
+            <div class="mp-import-header">
+                <div>
+                    <span class="mp-eyebrow">AUTOMATED CONTENT PIPELINE</span>
+                    <h2>＋ AUTO-IMPORT MANGA TO LIBRARY</h2>
+                    <p>Search any manga title via live MangaDex API or click a 1-click preset below to pull official cover art, synopsis, and chapters straight into your catalog.</p>
+                </div>
+                <button class="mp-modal-close" id="close-import-modal" aria-label="Close Importer">✕</button>
+            </div>
+
+            <div class="mp-import-search-row">
+                <input
+                    type="text"
+                    id="import-query-input"
+                    class="mp-live-input"
+                    placeholder="Enter manga name (e.g. Berserk, Attack on Titan, Naruto, Hunter x Hunter, Frieren)..."
+                >
+                <button class="mp-btn mp-btn-primary" id="import-search-submit-btn">🔍 Search MangaDex</button>
+            </div>
+
+            <!-- Quick 1-Click Popular Presets -->
+            <div class="mp-import-presets">
+                <span class="preset-label">Quick Search Presets:</span>
+                <button class="mp-preset-chip" data-preset="Berserk">Berserk</button>
+                <button class="mp-preset-chip" data-preset="One Punch Man">One Punch Man</button>
+                <button class="mp-preset-chip" data-preset="Naruto">Naruto</button>
+                <button class="mp-preset-chip" data-preset="Hunter x Hunter">Hunter x Hunter</button>
+                <button class="mp-preset-chip" data-preset="Sousou no Frieren">Frieren</button>
+                <button class="mp-preset-chip" data-preset="Vagabond">Vagabond</button>
+                <button class="mp-preset-chip" data-preset="Death Note">Death Note</button>
+                <button class="mp-preset-chip" data-preset="Vinland Saga">Vinland Saga</button>
+            </div>
+
+            <div class="mp-import-results" id="import-results-container">
+                <div class="mp-empty-state">Type a manga title above or click a preset chip to fetch live MangaDex metadata &amp; chapters.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================================================
+         PRO DUAL-MODE FULLSCREEN MANGA READER
+    ===================================================================== -->
+    <div class="mp-reader-overlay hidden" id="manga-reader-modal" role="dialog" aria-modal="true" aria-label="Manga Reader">
+        <!-- Reader Top HUD -->
+        <header class="mp-reader-topbar" id="reader-topbar">
+            <div class="reader-top-left">
+                <button class="reader-back-btn" id="reader-close-btn" title="Exit Reader (Esc)">
+                    ← <span>Back</span>
+                </button>
+                <div class="reader-title-meta">
+                    <span class="reader-series-name" id="reader-series-title">One Piece</span>
+                    <span class="reader-chapter-name" id="reader-chapter-title">Chapter 1: Romance Dawn</span>
+                </div>
+            </div>
+
+            <div class="reader-top-center">
+                <select id="reader-chapter-select" class="reader-select" aria-label="Select Chapter"></select>
+            </div>
+
+            <div class="reader-top-right">
+                <!-- Reading Mode Switcher -->
+                <div class="reader-mode-group" role="group" aria-label="Reading Mode">
+                    <button class="reader-tool-btn active" data-mode="vertical" id="mode-vertical-btn" title="Vertical Webtoon Scroll (M)">
+                        ↕ Vertical
+                    </button>
+                    <button class="reader-tool-btn" data-mode="rtl" id="mode-rtl-btn" title="Japanese Manga Right-to-Left (M)">
+                        ⬅ RTL Page
+                    </button>
+                    <button class="reader-tool-btn" data-mode="ltr" id="mode-ltr-btn" title="Left-to-Right Page Flip">
+                        ➡ LTR Page
+                    </button>
+                    <button class="reader-tool-btn" data-mode="spread" id="mode-spread-btn" title="Double-Page Spread">
+                        📖 2-Page
+                    </button>
+                </div>
+
+                <!-- Zoom Select -->
+                <select id="reader-zoom-select" class="reader-select reader-zoom-select" aria-label="Zoom Level">
+                    <option value="fit-width">Fit Width</option>
+                    <option value="fit-height">Fit Height</option>
+                    <option value="100">100%</option>
+                    <option value="125">125%</option>
+                    <option value="150">150%</option>
+                </select>
+
+                <button class="reader-tool-btn" id="reader-fullscreen-btn" title="Toggle Fullscreen (F)">⛶</button>
+            </div>
+        </header>
+
+        <!-- Reader Main Stage -->
+        <div class="mp-reader-stage" id="reader-stage">
+            <!-- Vertical Long-Strip Container -->
+            <div class="reader-vertical-container" id="reader-vertical-container"></div>
+
+            <!-- Horizontal Page-by-Page / Double-Spread Container -->
+            <div class="reader-paged-container hidden" id="reader-paged-container">
+                <button class="reader-nav-zone zone-left" id="reader-zone-left" aria-label="Left Page Action">
+                    <span class="zone-arrow" id="zone-left-label">‹ Next (RTL)</span>
+                </button>
+                <div class="reader-paged-spread" id="reader-paged-spread"></div>
+                <button class="reader-nav-zone zone-right" id="reader-zone-right" aria-label="Right Page Action">
+                    <span class="zone-arrow" id="zone-right-label">Prev (RTL) ›</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Reader Bottom HUD -->
+        <footer class="mp-reader-bottombar" id="reader-bottombar">
+            <button class="reader-ch-nav-btn" id="reader-prev-chapter-btn">⏮ Prev Chapter</button>
+
+            <div class="reader-scrubber-wrap">
+                <span class="reader-page-counter" id="reader-page-indicator">Page 1 / 6</span>
+                <input
+                    type="range"
+                    id="reader-page-slider"
+                    class="reader-page-slider"
+                    min="1"
+                    max="6"
+                    value="1"
+                >
+                <span class="reader-mode-pill" id="reader-direction-badge">VERTICAL SCROLL</span>
+            </div>
+
+            <button class="reader-ch-nav-btn" id="reader-next-chapter-btn">Next Chapter ⏭</button>
+        </footer>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="mp-toast-container" id="toast-container"></div>
+
+    <!-- Footer -->
+    <footer class="mp-footer">
+        <div class="mp-container mp-footer-inner">
+            <div class="mp-footer-brand">
+                <div class="mp-logo-box">
+                    <span class="mp-logo-main">MANGA</span>
+                    <span class="mp-logo-plus">PLUS</span>
+                </div>
+                <p>High-Craft Shonen &amp; Seinen Reader • Local Asset Pipeline + Live MangaDex API Integration.</p>
+            </div>
+            <div class="mp-footer-links">
+                <span>Shortcuts: <kbd>←</kbd> <kbd>→</kbd> Page Flip • <kbd>M</kbd> Mode • <kbd>F</kbd> Fullscreen • <kbd>Esc</kbd> Close</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

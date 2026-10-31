@@ -233,6 +233,44 @@
             transform: scale(1.05);
         }
 
+        .manga-card.is-completed {
+            border-color: rgba(245, 158, 11, 0.6);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(245, 158, 11, 0.25);
+        }
+
+        .card-badge-completed {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+            z-index: 2;
+        }
+
+        .card-progress-bar-wrap {
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 99px;
+            overflow: hidden;
+            margin-top: 6px;
+        }
+
+        .card-progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #6366f1, #a855f7);
+            border-radius: 99px;
+            transition: width 0.3s ease;
+        }
+
         .card-badge {
             position: absolute;
             top: 12px;
@@ -338,8 +376,8 @@
     <div class="hero-banner">
         <div class="hero-card">
             <div class="hero-info">
-                <h1>Read Clean & Uncensored Manga</h1>
-                <p>Fast, standalone chapter readers with complete releases, zero compression artifacts, and responsive multi-device reading.</p>
+                <h1>Official Manga & Webtoons</h1>
+                <p>Ultra-fast standalone readers with complete official releases, seamless full-chapter navigation, and real-time reading progress tracking.</p>
                 <div class="hero-tags">
                     <span class="hero-tag">🔥 Solo Leveling (200 Ch)</span>
                     <span class="hero-tag">⚡ Jujutsu Kaisen (271 Ch)</span>
@@ -360,7 +398,7 @@
         <div class="manga-grid">
 
             <!-- 1. Solo Leveling -->
-            <a href="https://aixcard.github.io/solo-leveling/" class="manga-card">
+            <a href="https://aixcard.github.io/solo-leveling/" class="manga-card" data-manga-id="solo-leveling">
                 <div class="card-cover-wrap">
                     <img src="https://raw.githubusercontent.com/AIxcard/solo-leveling/main/cover.jpg" alt="Solo Leveling" class="card-cover">
                     <span class="card-badge">Completed</span>
@@ -379,9 +417,9 @@
             </a>
 
             <!-- 2. Jujutsu Kaisen -->
-            <a href="https://aixcard.github.io/jujutsu-kaisen/" class="manga-card">
+            <a href="https://aixcard.github.io/jujutsu-kaisen/" class="manga-card" data-manga-id="jujutsu-kaisen">
                 <div class="card-cover-wrap">
-                    <img src="https://temp.compsci88.com/cover/fallback/01J76XYCERXE60T7FKXVCCAQ0H.jpg" alt="Jujutsu Kaisen" class="card-cover">
+                    <img src="https://raw.githubusercontent.com/AIxcard/jujutsu-kaisen/main/cover.jpg" alt="Jujutsu Kaisen" class="card-cover">
                     <span class="card-badge">Completed</span>
                 </div>
                 <div class="card-content">
@@ -398,9 +436,9 @@
             </a>
 
             <!-- 3. Attack on Titan -->
-            <a href="https://aixcard.github.io/attack-on-titan/" class="manga-card">
+            <a href="https://aixcard.github.io/attack-on-titan/" class="manga-card" data-manga-id="attack-on-titan">
                 <div class="card-cover-wrap">
-                    <img src="https://temp.compsci88.com/cover/fallback/01J76XY7KWP8KX5RFGVZY5TR95.jpg" alt="Attack on Titan" class="card-cover">
+                    <img src="https://raw.githubusercontent.com/AIxcard/attack-on-titan/main/cover.jpg" alt="Attack on Titan" class="card-cover">
                     <span class="card-badge">Completed</span>
                 </div>
                 <div class="card-content">
@@ -417,9 +455,9 @@
             </a>
 
             <!-- 4. Oshi no Ko -->
-            <a href="https://aixcard.github.io/oshi-no-ko/" class="manga-card">
+            <a href="https://aixcard.github.io/oshi-no-ko/" class="manga-card" data-manga-id="oshi-no-ko">
                 <div class="card-cover-wrap">
-                    <img src="https://temp.compsci88.com/cover/fallback/01J76XYDJ8EJGFDMR878PJM89D.jpg" alt="Oshi no Ko" class="card-cover">
+                    <img src="https://raw.githubusercontent.com/AIxcard/oshi-no-ko/main/cover.jpg" alt="Oshi no Ko" class="card-cover">
                     <span class="card-badge">Completed</span>
                 </div>
                 <div class="card-content">
@@ -436,9 +474,9 @@
             </a>
 
             <!-- 5. Jujutsu Kaisen Modulo -->
-            <a href="https://aixcard.github.io/jujutsu-kaisen-modulo/" class="manga-card">
+            <a href="https://aixcard.github.io/jujutsu-kaisen-modulo/" class="manga-card" data-manga-id="jujutsu-kaisen-modulo">
                 <div class="card-cover-wrap">
-                    <img src="https://temp.compsci88.com/cover/fallback/01K4JBKB0VX8TCFSSF1MK2DTZZ.jpg" alt="Jujutsu Kaisen Modulo" class="card-cover">
+                    <img src="https://raw.githubusercontent.com/AIxcard/jujutsu-kaisen-modulo/main/cover.jpg" alt="Jujutsu Kaisen Modulo" class="card-cover">
                     <span class="card-badge">Spin-Off</span>
                 </div>
                 <div class="card-content">
@@ -461,6 +499,69 @@
     <footer class="site-footer">
         <p>KURO MANGA • Powered by Dedicated Multi-Repository Infrastructure</p>
     </footer>
+
+    <script>
+        const MANGA_CONFIG = {
+            'solo-leveling': { coreTotal: 200 },
+            'jujutsu-kaisen': { coreTotal: 271 },
+            'attack-on-titan': { coreTotal: 139 },
+            'oshi-no-ko': { coreTotal: 166 },
+            'jujutsu-kaisen-modulo': { coreTotal: 25 }
+        };
+
+        function updateCardProgress() {
+            document.querySelectorAll('.manga-card').forEach(card => {
+                const id = card.dataset.mangaId;
+                if (!id || !MANGA_CONFIG[id]) return;
+                const conf = MANGA_CONFIG[id];
+
+                let readSet = new Set();
+                try {
+                    readSet = new Set(JSON.parse(localStorage.getItem(`kuro_read_${id}`) || '[]'));
+                } catch (e) {}
+
+                // Exclude .5 and decimal chapters from core count
+                const coreReadCount = [...readSet].filter(n => typeof n === 'number' && n % 1 === 0 && n > 0 && n <= conf.coreTotal).length;
+                const isMarkedCompleted = localStorage.getItem(`kuro_completed_${id}`) === 'true';
+                const isCompleted = isMarkedCompleted || (conf.coreTotal > 0 && coreReadCount >= conf.coreTotal);
+
+                const coverWrap = card.querySelector('.card-cover-wrap');
+                const content = card.querySelector('.card-content');
+                const footerAction = card.querySelector('.card-action-btn');
+
+                if (isCompleted) {
+                    card.classList.add('is-completed');
+                    if (!coverWrap.querySelector('.card-badge-completed')) {
+                        const b = document.createElement('span');
+                        b.className = 'card-badge-completed';
+                        b.innerHTML = '★ Completed';
+                        coverWrap.appendChild(b);
+                    }
+                    if (footerAction) {
+                        footerAction.textContent = 'Completed ✓';
+                        footerAction.style.background = 'linear-gradient(135deg, #f59e0b, #d97706)';
+                        footerAction.style.color = '#000';
+                    }
+                } else if (coreReadCount > 0) {
+                    const pct = Math.round((coreReadCount / conf.coreTotal) * 100);
+                    const existingProg = content.querySelector('.card-progress-info');
+                    const progHtml = `
+                        <div class="card-progress-info" style="margin-top:10px;font-size:0.78rem;color:#a5b4fc;font-weight:700;">
+                            Reading: ${coreReadCount}/${conf.coreTotal} Ch (${pct}%)
+                            <div class="card-progress-bar-wrap">
+                                <div class="card-progress-bar-fill" style="width:${pct}%;"></div>
+                            </div>
+                        </div>
+                    `;
+                    if (existingProg) existingProg.outerHTML = progHtml;
+                    else content.insertAdjacentHTML('beforeend', progHtml);
+                }
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', updateCardProgress);
+        window.addEventListener('pageshow', updateCardProgress);
+    </script>
 
 </body>
 </html>

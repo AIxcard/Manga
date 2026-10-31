@@ -17,6 +17,9 @@
             --border-hover: #3730a3;
             --accent: #6366f1;
             --accent-glow: rgba(99, 102, 241, 0.35);
+            --gold: #f59e0b;
+            --gold-glow: rgba(245, 158, 11, 0.35);
+            --green: #22c55e;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
         }
@@ -41,7 +44,7 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            background: rgba(8, 9, 13, 0.85);
+            background: rgba(8, 9, 13, 0.88);
             backdrop-filter: blur(16px);
             border-bottom: 1px solid var(--border);
             padding: 16px 28px;
@@ -143,7 +146,7 @@
         .hero-info p {
             color: var(--text-muted);
             font-size: 1rem;
-            max-width: 600px;
+            max-width: 650px;
             line-height: 1.5;
             margin-bottom: 20px;
         }
@@ -157,37 +160,86 @@
         .hero-tag {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid var(--border);
-            padding: 4px 12px;
+            padding: 5px 12px;
             border-radius: 6px;
             font-size: 0.8rem;
             color: #cbd5e1;
             font-weight: 600;
         }
 
-        /* Manga Grid Section */
+        /* Category Filter Tabs */
         .content-wrap {
             max-width: 1200px;
-            margin: 40px auto;
+            margin: 36px auto 60px auto;
             padding: 0 24px;
             width: 100%;
             flex: 1;
         }
 
-        .section-header {
+        .filter-bar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 8px 18px;
+            border-radius: 999px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .filter-btn:hover {
+            color: #fff;
+            border-color: var(--accent);
+        }
+
+        .filter-btn.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+            box-shadow: 0 4px 14px var(--accent-glow);
+        }
+
+        .category-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 24px;
+            margin: 36px 0 20px 0;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
         }
 
-        .section-title {
-            font-size: 1.5rem;
+        .category-title {
+            font-size: 1.4rem;
             font-weight: 800;
             display: flex;
             align-items: center;
             gap: 10px;
         }
 
+        .category-badge-count {
+            background: rgba(255, 255, 255, 0.08);
+            color: #cbd5e1;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 6px;
+        }
+
+        /* Manga Grid Section */
         .manga-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -283,6 +335,13 @@
             font-size: 0.75rem;
             font-weight: 700;
             color: #fff;
+            z-index: 2;
+        }
+
+        .badge-ongoing {
+            background: rgba(59, 130, 246, 0.85);
+            border-color: rgba(96, 165, 250, 0.4);
+            color: #fff;
         }
 
         .card-content {
@@ -367,8 +426,8 @@
             <span class="brand-title">KURO MANGA</span>
         </a>
         <div class="header-stats">
-            <span class="badge-live">8 Series Ready</span>
-            <span>1,200+ Chapters</span>
+            <span class="badge-live">11 Series Ready</span>
+            <span>2,700+ Chapters</span>
         </div>
     </header>
 
@@ -379,14 +438,16 @@
                 <h1>Official Manga & Webtoons</h1>
                 <p>Ultra-fast standalone readers with complete official releases, seamless full-chapter navigation, and real-time reading progress tracking.</p>
                 <div class="hero-tags">
-                    <span class="hero-tag">🔥 Solo Leveling (200 Ch)</span>
-                    <span class="hero-tag">⚡ Jujutsu Kaisen (271 Ch)</span>
-                    <span class="hero-tag">⚔️ Attack on Titan (142 Ch)</span>
-                    <span class="hero-tag">⭐ Oshi no Ko (167 Ch)</span>
-                    <span class="hero-tag">📓 Death Note (112 Ch)</span>
-                    <span class="hero-tag">💧 Slime Isekai (165 Ch)</span>
-                    <span class="hero-tag">⏳ Re:Zero (155 Ch)</span>
-                    <span class="hero-tag">🌀 JJK Modulo (25 Ch)</span>
+                    <span class="hero-tag">🔥 Solo Leveling</span>
+                    <span class="hero-tag">🍥 Naruto</span>
+                    <span class="hero-tag">⚔️ Bleach</span>
+                    <span class="hero-tag">⚡ Jujutsu Kaisen</span>
+                    <span class="hero-tag">🩸 Tokyo Ghoul</span>
+                    <span class="hero-tag">🛡️ Attack on Titan</span>
+                    <span class="hero-tag">💧 Slime Isekai</span>
+                    <span class="hero-tag">📓 Death Note</span>
+                    <span class="hero-tag">⭐ Oshi no Ko</span>
+                    <span class="hero-tag">⏳ Re:Zero</span>
                 </div>
             </div>
         </div>
@@ -394,165 +455,249 @@
 
     <!-- Active Library -->
     <main class="content-wrap">
-        <div class="section-header">
-            <h2 class="section-title">Active Library</h2>
+
+        <!-- Category Filter Tabs -->
+        <div class="filter-bar">
+            <button class="filter-btn active" onclick="filterCategory('all', this)">All Titles (11)</button>
+            <button class="filter-btn" onclick="filterCategory('ongoing', this)">Ongoing Series (1)</button>
+            <button class="filter-btn" onclick="filterCategory('completed', this)">Completed Series (10)</button>
         </div>
 
-        <div class="manga-grid">
+        <!-- 1. Ongoing Series Category -->
+        <section id="section-ongoing">
+            <div class="category-header">
+                <h2 class="category-title">
+                    <span>Ongoing Series</span>
+                    <span class="category-badge-count">1 Title</span>
+                </h2>
+            </div>
+            <div class="manga-grid">
 
-            <!-- 1. Solo Leveling -->
-            <a href="https://aixcard.github.io/solo-leveling/" class="manga-card" data-manga-id="solo-leveling">
-                <div class="card-cover-wrap">
-                    <img src="https://raw.githubusercontent.com/AIxcard/solo-leveling/main/cover.jpg" alt="Solo Leveling" class="card-cover">
-                    <span class="card-badge">Completed</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Solo Leveling</h3>
-                    <div class="card-author">By Chugong & DUBU (REDICE Studio)</div>
-                    <p class="card-synopsis">
-                        10 years ago, after the 'Gate' connected the real world with the monster world, ordinary people received hunter abilities. Sung Jin-woo, an E-rank Hunter known as the 'Weakest Hunter of All Mankind', embarks on a journey to become the world's greatest Hunter.
-                    </p>
-                    <div class="card-footer">
-                        <span class="card-chapters">200 Chapters (1 - 200)</span>
-                        <span class="card-action-btn">Read Now →</span>
+                <!-- That Time I Got Reincarnated as a Slime -->
+                <a href="https://aixcard.github.io/that-time-i-got-reincarnated-as-a-slime/" class="manga-card" data-manga-id="that-time-i-got-reincarnated-as-a-slime" data-category="ongoing">
+                    <div class="card-cover-wrap">
+                        <img src="https://raw.githubusercontent.com/AIxcard/that-time-i-got-reincarnated-as-a-slime/main/cover.jpg" alt="That Time I Got Reincarnated as a Slime" class="card-cover">
+                        <span class="card-badge badge-ongoing">Ongoing</span>
                     </div>
-                </div>
-            </a>
-
-            <!-- 2. Jujutsu Kaisen -->
-            <a href="https://aixcard.github.io/jujutsu-kaisen/" class="manga-card" data-manga-id="jujutsu-kaisen">
-                <div class="card-cover-wrap">
-                    <img src="https://raw.githubusercontent.com/AIxcard/jujutsu-kaisen/main/cover.jpg" alt="Jujutsu Kaisen" class="card-cover">
-                    <span class="card-badge">Completed</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Jujutsu Kaisen</h3>
-                    <div class="card-author">By Gege Akutami</div>
-                    <p class="card-synopsis">
-                        Hardship, regret, shame: the negative feelings that humans feel become Curses. Yuji Itadori, a high schooler with immense physical strength, swallows a cursed talisman to save a friend and becomes host to Ryomen Sukuna, the King of Curses.
-                    </p>
-                    <div class="card-footer">
-                        <span class="card-chapters">271 Chapters (1 - 271.5)</span>
-                        <span class="card-action-btn">Read Now →</span>
+                    <div class="card-content">
+                        <h3 class="card-title">That Time I Got Reincarnated as a Slime</h3>
+                        <div class="card-author">By Fuse & Taiki Kawakami</div>
+                        <p class="card-synopsis">
+                            Satoru Mikami is stabbed on the streets of Tokyo and reincarnates in an unfamiliar fantasy realm as a sentient slime named Rimuru Tempest. Using his unique predator absorption abilities, he builds a nation for monsters.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-chapters">165 Chapters</span>
+                            <span class="card-action-btn">Read Now →</span>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            <!-- 3. Attack on Titan -->
-            <a href="https://aixcard.github.io/attack-on-titan/" class="manga-card" data-manga-id="attack-on-titan">
-                <div class="card-cover-wrap">
-                    <img src="https://raw.githubusercontent.com/AIxcard/attack-on-titan/main/cover.jpg" alt="Attack on Titan" class="card-cover">
-                    <span class="card-badge">Completed</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Attack on Titan</h3>
-                    <div class="card-author">By Hajime Isayama</div>
-                    <p class="card-synopsis">
-                        Humans are nearly exterminated by giants. A small percentage survived behind massive walls. When a Colossal Titan breaks through Wall Maria, young Eren Yeager vows to eradicate every single Titan from the earth.
-                    </p>
-                    <div class="card-footer">
-                        <span class="card-chapters">142 Chapters (1 - 139 + Specials)</span>
-                        <span class="card-action-btn">Read Now →</span>
+            </div>
+        </section>
+
+        <!-- 2. Completed Series Category -->
+        <section id="section-completed">
+            <div class="category-header">
+                <h2 class="category-title">
+                    <span>Completed Series</span>
+                    <span class="category-badge-count">10 Titles</span>
+                </h2>
+            </div>
+            <div class="manga-grid">
+
+                <!-- 1. Solo Leveling -->
+                <a href="https://aixcard.github.io/solo-leveling/" class="manga-card" data-manga-id="solo-leveling" data-category="completed">
+                    <div class="card-cover-wrap">
+                        <img src="https://raw.githubusercontent.com/AIxcard/solo-leveling/main/cover.jpg" alt="Solo Leveling" class="card-cover">
+                        <span class="card-badge">Completed</span>
                     </div>
-                </div>
-            </a>
-
-            <!-- 4. Oshi no Ko -->
-            <a href="https://aixcard.github.io/oshi-no-ko/" class="manga-card" data-manga-id="oshi-no-ko">
-                <div class="card-cover-wrap">
-                    <img src="https://raw.githubusercontent.com/AIxcard/oshi-no-ko/main/cover.jpg" alt="Oshi no Ko" class="card-cover">
-                    <span class="card-badge">Completed</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Oshi no Ko</h3>
-                    <div class="card-author">By Aka Akasaka & Mengo Yokoyari</div>
-                    <p class="card-synopsis">
-                        Goro is an ob-gyn and fan of idol Ai Hoshino. When Ai unexpectedly arrives at his clinic pregnant, a sudden murder reincarnates Goro as one of her twin children, plunging him into the dark underbelly of the entertainment world.
-                    </p>
-                    <div class="card-footer">
-                        <span class="card-chapters">167 Chapters (1 - 166)</span>
-                        <span class="card-action-btn">Read Now →</span>
+                    <div class="card-content">
+                        <h3 class="card-title">Solo Leveling</h3>
+                        <div class="card-author">By Chugong & DUBU (REDICE Studio)</div>
+                        <p class="card-synopsis">
+                            10 years ago, after the 'Gate' connected the real world with the monster world, ordinary people received hunter abilities. Sung Jin-woo, an E-rank Hunter known as the 'Weakest Hunter of All Mankind', embarks on a journey to become the world's greatest Hunter.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-chapters">200 Chapters</span>
+                            <span class="card-action-btn">Read Now →</span>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            <!-- 5. Jujutsu Kaisen Modulo -->
-            <a href="https://aixcard.github.io/jujutsu-kaisen-modulo/" class="manga-card" data-manga-id="jujutsu-kaisen-modulo">
-                <div class="card-cover-wrap">
-                    <img src="https://raw.githubusercontent.com/AIxcard/jujutsu-kaisen-modulo/main/cover.jpg" alt="Jujutsu Kaisen Modulo" class="card-cover">
-                    <span class="card-badge">Spin-Off</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Jujutsu Kaisen Modulo</h3>
-                    <div class="card-author">By Gege Akutami</div>
-                    <p class="card-synopsis">
-                        Official spin-off and special chapter installments expanding the Jujutsu Kaisen sorcery and curse manipulation universe.
-                    </p>
-                    <div class="card-footer">
-                        <span class="card-chapters">25 Chapters</span>
-                        <span class="card-action-btn">Read Now →</span>
+                <!-- 2. Naruto -->
+                <a href="https://aixcard.github.io/naruto/" class="manga-card" data-manga-id="naruto" data-category="completed">
+                    <div class="card-cover-wrap">
+                        <img src="https://raw.githubusercontent.com/AIxcard/naruto/main/cover.jpg" alt="Naruto" class="card-cover">
+                        <span class="card-badge">Completed</span>
                     </div>
-                </div>
-            </a>
-
-            <!-- 6. Death Note -->
-            <a href="https://aixcard.github.io/death-note/" class="manga-card" data-manga-id="death-note">
-                <div class="card-cover-wrap">
-                    <img src="https://raw.githubusercontent.com/AIxcard/death-note/main/cover.jpg" alt="Death Note" class="card-cover">
-                    <span class="card-badge">Completed</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Death Note</h3>
-                    <div class="card-author">By Tsugumi Ohba & Takeshi Obata</div>
-                    <p class="card-synopsis">
-                        Light Yagami is a genius high school student who discovers the "Death Note", a supernatural notebook dropped by Shinigami Ryuk. Any person whose name is written inside dies. Light sets out to cleanse the world of criminals as Kira.
-                    </p>
-                    <div class="card-footer">
-                        <span class="card-chapters">112 Chapters (1 - 108 + Specials)</span>
-                        <span class="card-action-btn">Read Now →</span>
+                    <div class="card-content">
+                        <h3 class="card-title">Naruto</h3>
+                        <div class="card-author">By Masashi Kishimoto</div>
+                        <p class="card-synopsis">
+                            Shunned by his village because of the Nine-Tailed Fox sealed within him, spirited ninja orphan Naruto Uzumaki dreams of gaining recognition and becoming the ultimate Hokage.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-chapters">701 Chapters</span>
+                            <span class="card-action-btn">Read Now →</span>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            <!-- 7. That Time I Got Reincarnated as a Slime -->
-            <a href="https://aixcard.github.io/that-time-i-got-reincarnated-as-a-slime/" class="manga-card" data-manga-id="that-time-i-got-reincarnated-as-a-slime">
-                <div class="card-cover-wrap">
-                    <img src="https://raw.githubusercontent.com/AIxcard/that-time-i-got-reincarnated-as-a-slime/main/cover.jpg" alt="That Time I Got Reincarnated as a Slime" class="card-cover">
-                    <span class="card-badge">Completed</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">That Time I Got Reincarnated as a Slime</h3>
-                    <div class="card-author">By Fuse & Taiki Kawakami</div>
-                    <p class="card-synopsis">
-                        Satoru Mikami is stabbed on the streets of Tokyo and reincarnates in an unfamiliar fantasy realm as a sentient slime named Rimuru Tempest. Using his unique predator absorption abilities, he builds a nation for monsters.
-                    </p>
-                    <div class="card-footer">
-                        <span class="card-chapters">165 Chapters (1 - 147)</span>
-                        <span class="card-action-btn">Read Now →</span>
+                <!-- 3. Bleach -->
+                <a href="https://aixcard.github.io/bleach/" class="manga-card" data-manga-id="bleach" data-category="completed">
+                    <div class="card-cover-wrap">
+                        <img src="https://raw.githubusercontent.com/AIxcard/bleach/main/cover.jpg" alt="Bleach" class="card-cover">
+                        <span class="card-badge">Completed</span>
                     </div>
-                </div>
-            </a>
-
-            <!-- 8. Re:Zero - Starting Life in Another World -->
-            <a href="https://aixcard.github.io/re-zero/" class="manga-card" data-manga-id="re-zero">
-                <div class="card-cover-wrap">
-                    <img src="https://raw.githubusercontent.com/AIxcard/re-zero/main/cover.jpg" alt="Re:Zero - Starting Life in Another World" class="card-cover">
-                    <span class="card-badge">Multi-Arc</span>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Re:Zero - Starting Life in Another World</h3>
-                    <div class="card-author">By Tappei Nagatsuki & Daichi Matsuse</div>
-                    <p class="card-synopsis">
-                        Subaru Natsuki is suddenly summoned into a fantasy world and fatally attacked alongside the silver-haired half-elf Emilia. Discovering his ability 'Return by Death', he rewinds tragic events to protect those he loves.
-                    </p>
-                    <div class="card-footer">
-                        <span class="card-chapters">155 Chapters (Arcs 1 to 4)</span>
-                        <span class="card-action-btn">Read Now →</span>
+                    <div class="card-content">
+                        <h3 class="card-title">Bleach</h3>
+                        <div class="card-author">By Tite Kubo</div>
+                        <p class="card-synopsis">
+                            High school student Ichigo Kurosaki gains the powers of a Soul Reaper after a fateful encounter with Rukia Kuchiki, taking on the duty of defending the living world from Hollows and guiding souls to the afterlife.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-chapters">698 Chapters</span>
+                            <span class="card-action-btn">Read Now →</span>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-        </div>
+                <!-- 4. Jujutsu Kaisen -->
+                <a href="https://aixcard.github.io/jujutsu-kaisen/" class="manga-card" data-manga-id="jujutsu-kaisen" data-category="completed">
+                    <div class="card-cover-wrap">
+                        <img src="https://raw.githubusercontent.com/AIxcard/jujutsu-kaisen/main/cover.jpg" alt="Jujutsu Kaisen" class="card-cover">
+                        <span class="card-badge">Completed</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Jujutsu Kaisen</h3>
+                        <div class="card-author">By Gege Akutami</div>
+                        <p class="card-synopsis">
+                            Hardship, regret, shame: the negative feelings that humans feel become Curses. Yuji Itadori, a high schooler with immense physical strength, swallows a cursed talisman to save a friend and becomes host to Ryomen Sukuna, the King of Curses.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-chapters">272 Chapters</span>
+                            <span class="card-action-btn">Read Now →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 5. Tokyo Ghoul -->
+                <a href="https://aixcard.github.io/tokyo-ghoul/" class="manga-card" data-manga-id="tokyo-ghoul" data-category="completed">
+                    <div class="card-cover-wrap">
+                        <img src="https://raw.githubusercontent.com/AIxcard/tokyo-ghoul/main/cover.jpg" alt="Tokyo Ghoul" class="card-cover">
+                        <span class="card-badge">Completed</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Tokyo Ghoul</h3>
+                        <div class="card-author">By Sui Ishida</div>
+                        <p class="card-synopsis">
+                            In Tokyo, flesh-eating ghouls lurk in shadows. After surviving a brutal attack and an emergency organ transplant from a ghoul, Ken Kaneki becomes a half-ghoul caught between two worlds.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-chapters">144 Chapters</span>
+                            <span class="card-action-btn">Read Now →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 6. Attack on Titan -->
+                <a href="https://aixcard.github.io/attack-on-titan/" class="manga-card" data-manga-id="attack-on-titan" data-category="completed">
+                    <div class="card-cover-wrap">
+                        <img src="https://raw.githubusercontent.com/AIxcard/attack-on-titan/main/cover.jpg" alt="Attack on Titan" class="card-cover">
+                        <span class="card-badge">Completed</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Attack on Titan</h3>
+                        <div class="card-author">By Hajime Isayama</div>
+                        <p class="card-synopsis">
+                            Humans are nearly exterminated by giants. A small percentage survived behind massive walls. When a Colossal Titan breaks through Wall Maria, young Eren Yeager vows to eradicate every single Titan from the earth.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-chapters">142 Chapters</span>
+                            <span class="card-action-btn">Read Now →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 7. Death Note -->
+                <a href="https://aixcard.github.io/death-note/" class="manga-card" data-manga-id="death-note" data-category="completed">
+                    <div class="card-cover-wrap">
+                        <img src="https://raw.githubusercontent.com/AIxcard/death-note/main/cover.jpg" alt="Death Note" class="card-cover">
+                        <span class="card-badge">Completed</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Death Note</h3>
+                        <div class="card-author">By Tsugumi Ohba & Takeshi Obata</div>
+                        <p class="card-synopsis">
+                            Light Yagami is a genius high school student who discovers the "Death Note", a supernatural notebook dropped by Shinigami Ryuk. Any person whose name is written inside dies. Light sets out to cleanse the world of criminals as Kira.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-chapters">112 Chapters</span>
+                            <span class="card-action-btn">Read Now →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 8. Oshi no Ko -->
+                <a href="https://aixcard.github.io/oshi-no-ko/" class="manga-card" data-manga-id="oshi-no-ko" data-category="completed">
+                    <div class="card-cover-wrap">
+                        <img src="https://raw.githubusercontent.com/AIxcard/oshi-no-ko/main/cover.jpg" alt="Oshi no Ko" class="card-cover">
+                        <span class="card-badge">Completed</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Oshi no Ko</h3>
+                        <div class="card-author">By Aka Akasaka & Mengo Yokoyari</div>
+                        <p class="card-synopsis">
+                            Goro is an ob-gyn and fan of idol Ai Hoshino. When Ai unexpectedly arrives at his clinic pregnant, a sudden murder reincarnates Goro as one of her twin children, plunging him into the dark underbelly of the entertainment world.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-chapters">167 Chapters</span>
+                            <span class="card-action-btn">Read Now →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 9. Re:Zero - Starting Life in Another World -->
+                <a href="https://aixcard.github.io/re-zero/" class="manga-card" data-manga-id="re-zero" data-category="completed">
+                    <div class="card-cover-wrap">
+                        <img src="https://raw.githubusercontent.com/AIxcard/re-zero/main/cover.jpg" alt="Re:Zero - Starting Life in Another World" class="card-cover">
+                        <span class="card-badge">Completed</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Re:Zero - Starting Life in Another World</h3>
+                        <div class="card-author">By Tappei Nagatsuki & Daichi Matsuse</div>
+                        <p class="card-synopsis">
+                            Subaru Natsuki is suddenly summoned into a fantasy world and fatally attacked alongside the silver-haired half-elf Emilia. Discovering his ability 'Return by Death', he rewinds tragic events to protect those he loves.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-chapters">155 Chapters</span>
+                            <span class="card-action-btn">Read Now →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 10. Jujutsu Kaisen Modulo -->
+                <a href="https://aixcard.github.io/jujutsu-kaisen-modulo/" class="manga-card" data-manga-id="jujutsu-kaisen-modulo" data-category="completed">
+                    <div class="card-cover-wrap">
+                        <img src="https://raw.githubusercontent.com/AIxcard/jujutsu-kaisen-modulo/main/cover.jpg" alt="Jujutsu Kaisen Modulo" class="card-cover">
+                        <span class="card-badge">Completed</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Jujutsu Kaisen Modulo</h3>
+                        <div class="card-author">By Gege Akutami</div>
+                        <p class="card-synopsis">
+                            Official spin-off and special chapter installments expanding the Jujutsu Kaisen sorcery and curse manipulation universe.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-chapters">25 Chapters</span>
+                            <span class="card-action-btn">Read Now →</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -563,14 +708,36 @@
     <script>
         const MANGA_CONFIG = {
             'solo-leveling': { coreTotal: 200 },
+            'naruto': { coreTotal: 700 },
+            'bleach': { coreTotal: 686 },
             'jujutsu-kaisen': { coreTotal: 271 },
+            'tokyo-ghoul': { coreTotal: 143 },
             'attack-on-titan': { coreTotal: 139 },
-            'oshi-no-ko': { coreTotal: 166 },
             'death-note': { coreTotal: 108 },
             'that-time-i-got-reincarnated-as-a-slime': { coreTotal: 147 },
+            'oshi-no-ko': { coreTotal: 166 },
             're-zero': { coreTotal: 140 },
             'jujutsu-kaisen-modulo': { coreTotal: 25 }
         };
+
+        function filterCategory(cat, btn) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+
+            const ongoingSec = document.getElementById('section-ongoing');
+            const completedSec = document.getElementById('section-completed');
+
+            if (cat === 'all') {
+                ongoingSec.style.display = 'block';
+                completedSec.style.display = 'block';
+            } else if (cat === 'ongoing') {
+                ongoingSec.style.display = 'block';
+                completedSec.style.display = 'none';
+            } else if (cat === 'completed') {
+                ongoingSec.style.display = 'none';
+                completedSec.style.display = 'block';
+            }
+        }
 
         function updateCardProgress() {
             document.querySelectorAll('.manga-card').forEach(card => {

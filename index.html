@@ -426,13 +426,11 @@
             <span class="brand-title">KURO MANGA</span>
         </a>
         <div class="header-stats">
-            <span class="badge-live">14 Series Ready</span>
-            <span>3,100+ Chapters</span>
+            <span class="badge-live">17 Series Ready</span>
+            <span>3,700+ Chapters</span>
         </div>
         <div class="header-right" style="display:flex;align-items:center;gap:12px;">
-            <a href="https://aixcard.github.io/Anime/" style="display:inline-flex;align-items:center;gap:8px;background:rgba(99,102,241,0.18);border:1px solid rgba(99,102,241,0.4);color:#a5b4fc;padding:8px 16px;border-radius:8px;font-size:0.85rem;font-weight:700;text-decoration:none;transition:all 0.2s;">
-                <span>📺 Switch to Kuro Anime</span>
-            </a>
+            
         </div>
     </header>
 
@@ -465,8 +463,8 @@
 
         <!-- Category Filter Tabs -->
         <div class="filter-bar">
-            <button class="filter-btn active" onclick="filterCategory('all', this)">All Titles (14)</button>
-            <button class="filter-btn" onclick="filterCategory('ongoing', this)">Ongoing Series (2)</button>
+            <button class="filter-btn active" onclick="filterCategory('all', this)">All Titles (17)</button>
+            <button class="filter-btn" onclick="filterCategory('ongoing', this)">Ongoing Series (5)</button>
             <button class="filter-btn" onclick="filterCategory('completed', this)">Completed Series (12)</button>
         </div>
 
@@ -475,7 +473,7 @@
             <div class="category-header">
                 <h2 class="category-title">
                     <span>Ongoing Series</span>
-                    <span class="category-badge-count">2 Titles</span>
+                    <span class="category-badge-count">5 Titles</span>
                 </h2>
             </div>
             <div class="manga-grid">
@@ -513,6 +511,62 @@
                         </p>
                         <div class="card-footer">
                             <span class="card-chapters">176 Chapters</span>
+                            <span class="card-action-btn">Read Now →</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- 3. Record of Ragnarok -->
+                <a href="https://aixcard.github.io/record-of-ragnarok/" class="manga-card" data-manga-id="record-of-ragnarok" data-category="ongoing">
+                    <div class="card-cover-wrap">
+                        <img src="https://raw.githubusercontent.com/AIxcard/record-of-ragnarok/main/cover.jpg" alt="Record of Ragnarok" class="card-cover">
+                        <span class="card-badge" style="background:rgba(234,179,8,0.2);color:#facc15;border-color:rgba(234,179,8,0.4);">Ongoing</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Record of Ragnarok</h3>
+                        <div class="card-author">By Shinya Umemura & Takumi Fukui</div>
+                        <p class="card-synopsis">
+                            When the council of gods convenes to vote on the extinction of humanity, the valkyrie Brunhilde proposes Ragnarok: thirteen one-on-one battles between humanity's greatest champions and almighty gods.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-chapters">119 Chapters</span>
+                            <span class="card-action-btn">Read Now →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 4. Seraph of the End -->
+                <a href="https://aixcard.github.io/seraph-of-the-end/" class="manga-card" data-manga-id="seraph-of-the-end" data-category="ongoing">
+                    <div class="card-cover-wrap">
+                        <img src="https://raw.githubusercontent.com/AIxcard/seraph-of-the-end/main/cover.jpg" alt="Seraph of the End" class="card-cover">
+                        <span class="card-badge" style="background:rgba(234,179,8,0.2);color:#facc15;border-color:rgba(234,179,8,0.4);">Ongoing</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Seraph of the End</h3>
+                        <div class="card-author">By Takaya Kagami & Daisuke Furuya</div>
+                        <p class="card-synopsis">
+                            After a catastrophic virus wipes out adults worldwide, vampires enslave surviving children. Yuichiro Hyakuya escapes the slaughter of his orphan family and joins the Imperial Demon Army for vengeance.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-chapters">149 Chapters</span>
+                            <span class="card-action-btn">Read Now →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 5. Blue Lock -->
+                <a href="https://aixcard.github.io/blue-lock/" class="manga-card" data-manga-id="blue-lock" data-category="ongoing">
+                    <div class="card-cover-wrap">
+                        <img src="https://raw.githubusercontent.com/AIxcard/blue-lock/main/cover.jpg" alt="Blue Lock" class="card-cover">
+                        <span class="card-badge" style="background:rgba(234,179,8,0.2);color:#facc15;border-color:rgba(234,179,8,0.4);">Ongoing</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Blue Lock</h3>
+                        <div class="card-author">By Muneyuki Kaneshiro & Yusuke Nomura</div>
+                        <p class="card-synopsis">
+                            Following Japan's World Cup exit, eccentric master coach Jinpachi Ego locks 300 elite high school strikers inside the experimental prison Blue Lock to forge the world's most egotistical striker.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-chapters">369 Chapters</span>
                             <span class="card-action-btn">Read Now →</span>
                         </div>
                     </div>
@@ -777,6 +831,9 @@
             'jujutsu-kaisen': { coreTotal: 271 },
             'tokyo-ghoul': { coreTotal: 143 },
             'tokyo-ghoul-re': { coreTotal: 179 },
+            'record-of-ragnarok': { coreTotal: 119 },
+            'seraph-of-the-end': { coreTotal: 160 },
+            'blue-lock': { coreTotal: 368 },,
             'attack-on-titan': { coreTotal: 139 },
             'death-note': { coreTotal: 108 },
             'that-time-i-got-reincarnated-as-a-slime': { coreTotal: 147 },
